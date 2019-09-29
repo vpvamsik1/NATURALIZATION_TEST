@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Naturalization Test</title>
+  </head>
+  <body>
+        <!-- Image and text -->
+    <nav class="navbar">
+      
+        <img src="assets/images/flag.png" id="flagtop1" height="60px" class="d-inline-block align-top" alt="">
+        <h1 id="nt">Naturalization Test</h1>
+        <img src="assets/images/flag.png" id="flagtop2" height="60px" class="d-inline-block align-top" alt="">
+    </nav>
+
+    <div class="container">
+
+        <div id="introBox">
+
+            <h3>Can you pass the<br>United States Naturalization Test?</h3>
+
+            <h4>Find out if you can answer 10 sample questions from the test required of all<br>immigrants
+                if they want to become American citizens!</h4>
+
+            <input type="text" id="I1" placeholder="Enter your name!">
+            
+            <button type="button" class="btn btn-danger" id="B1">Start!</button>
+         </div>
+
+         <div id="questions">
+
+                <p id="tr">Time Remaining: <span id="timeRem"></span></p>
+    
+                <p class="Zmb mt">1) Who is the chief justice of the Supreme Court?</p><span class="options"><input type="radio" name="CJ" value="F" class="q1"> Ted Cruz</span>
+                <span class="options"><input type="radio" name="CJ" value="F" class="q1"> Neil Goursuch </span> <span class="options"><input type="radio" name="CJ" value="C" class="q1"> John Roberts </span>
+                <span class="options"><input type="radio" name="CJ" value="F" class="q1"> Ruth Bader Ginsburg</span>
+        
+                <p class="Zmb mt">2) Who elects the President of the United States?</p><span class="options"><input type="radio" name="voting" value="F" class="q2"> The Citizens</span>
+                <span class="options"><input type="radio" name="voting" value="F" class="q2"> The Senate</span> <span class="options"><input type="radio" name="voting" value="F" class="q2"> The House of Representatives</span>
+                <span class="options"><input type="radio" name="voting" value="C" class="q2"> Delegates of the Electoral College</span>
+              
+                <p class="Zmb mt">3) If the President and the Vice President are unable to serve, who is next in the line of succession?</p><span class="options"><input type="radio" name="succesion" value="C" class="q3"> Speaker of the House</span>
+                <span class="options"><input type="radio" name="succesion" value="F" class="q3"> Attorney General</span> <span class="options"><input type="radio" name="succesion" value="F" class="q3"> Secretary of State</span>
+                <span class="options"><input type="radio" name="succesion" value="F" class="q3"> President pro tempore of the Senate</span>
+              
+                <p class="Zmb mt">4) Who is the commander-in-chief of our military?</p><span class="options"><input type="radio" name="military" value="F" class="q4"> Secretary of Defense</span>
+                <span class="options"><input type="radio" name="military" value="F" class="q4"> Secretary of State</span> <span class="options"><input type="radio" name="military" value="C" class="q4"> The President</span>
+                <span class="options"><input type="radio" name="military" value="F" class="q4"> The Vice President</span>
+        
+                <p class="Zmb mt">5) Which of these is a right protected by the first amendment?</p><span class="options"><input type="radio" name="1A" value="F" class="q5"> The Right to Bear Arms</span>
+                <span class="options"><input type="radio" name="1A" value="C" class="q5"> Freedom of Religion</span> <span class="options"><input type="radio" name="1A" value="F" class="q5"> The Right to Due Process</span>
+                <span class="options"><input type="radio" name="1A" value="F" class="q5"> The Right to a Trial by Jury</span>
+        
+                <p class="Zmb mt">6) Who wrote the Declaration of Independence?</p><span class="options"><input type="radio" name="decInde" value="F" class="q6"> Benjamin Franklin</span>
+                <span class="options"><input type="radio" name="decInde" value="C" class="q6"> Thomas Jefferson</span> <span class="options"><input type="radio" name="decInde" value="F" class="q6"> John Adams</span>
+                <span class="options"><input type="radio" name="decInde" value="F" class="q6"> Alexander Hamilton</span>
+        
+                <p class="Zmb mt">7) Who was the US President during World War 1?</p><span class="options"><input type="radio" name="WW1Pres" value="C" class="q7"> Woodrow Wilson</span>
+                <span class="options"><input type="radio" name="WW1Pres"  value="F" class="q7"> Abraham Lincoln</span> <span class="options"><input type="radio" name="WW1Pres"  value="F" class="q7"> Theodore Roosevelt</span>
+                <span class="options"><input type="radio" name="WW1Pres"  value="F" class="q7"> Franklin D Roosevelt</span>
+        
+                <p class="Zmb mt">8) Why does the flag have 13 stripes?</p><span class="options"><input type="radio" name="13Stripes" value="F" class="q8"> To Represent the States</span>
+                <span class="options"><input type="radio" name="13Stripes" value="F" class="q8"> Good luck</span> <span class="options"><input type="radio" name="13Stripes" value="C" class="q8"> To Represent the original colonies</span>
+                <span class="options"><input type="radio" name="13Stripes" value="F" class="q8"> To Represent Congress</span>
+                
+                <p class="Zmb mt">9) What is the west coast ocean of the United States?</p><span class="options"><input type="radio" name="ocean" value="F" class="q9"> Atlantic</span>
+                <span class="options"><input type="radio" name="ocean" value="F" class="q9"> Gulf of Mexico</span>
+                <span class="options"><input type="radio" name="ocean" value="F" class="q9"> Artic</span><span class="options"><input type="radio" name="ocean" value="C" class="q9"> Pacific</span>
+                
+                <p class="Zmb mt">10) Which European colonial power did the 13 colonies fight off for independence?</p><span class="options"><input type="radio" name="13colonies" value="C" class="q10"> Great Britian</span>
+                <span class="options"><input type="radio" name="13colonies" value="F" class="q10"> Spain</span> <span class="options"><input type="radio" name="13colonies" value="F" class="q10"> France</span>
+                <span class="options"><input type="radio" name="13colonies" value="F" class="q10"> Netherland</span> 
+            
+                <div id="buttonRow">
+                  <button class="btn btn-danger" id="B2">Done!</button>
+                </div>
+    
+         </div>
+    
+        <div id="results">
+
+            <p>Correct Answers: <span id="CA">0</span></p>
+
+            <p>Incorrect Answers: <span id="IA">0</span></p>
+
+            <p>Unaswered: <span id="UA">0</span></p>
+
+            <div id="pass"></div>
+
+            <div id="fail"></div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+
+  </body>
+</html>
